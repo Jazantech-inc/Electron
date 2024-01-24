@@ -1,0 +1,114 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+input{
+    height: 50px !important;
+    border: 1px solid #b9b9b9;
+}
+input:focus {
+    outline: none !important;
+    border: 1px solid orange !important;
+    box-shadow: none !important;
+}
+button {
+    height: 50px !important;
+    box-shadow: none !important;
+}
+
+/* .uder{
+    position: relative;
+}
+.uder:before{
+    content: '';
+       position: absolute;
+       bottom: 0;
+       left: 0;
+       
+} */
+
+/* .uder:hover:before{
+width: 100%;
+transition: width 600ms ease-in-out;
+} */
+
+
+.link:before{
+    background: linear-gradient(to right, transparent,rgba(245, 185, 5, 0.550),rgba(255, 208, 0, 0.9));
+    content: "";
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 0;
+    position: absolute;
+    border-bottom: 2px solid orange;
+      
+
+}
+.link:hover:before{
+width: 100%;
+transition: width 600ms ease-out;
+}
+
+
+.profile{
+    padding: 30px;
+    border-radius: 50%;
+    transition: .6s;
+} 
+
+.profile:hover{
+    border-radius: 10px;
+    height: 260px;
+}
+.img{
+    border-radius: 50%;
+    transition: .6s;
+    border: 2px solid orange;
+    
+}
+.profile:hover img{
+    border-radius: 10px;
+    transform: translateY(-60px);
+}
+
+.profile:hover .caption{
+    opacity: 1;
+    transform: translatey(-8px);
+}
+.w-img{
+    border: 2px solid orange;
+}
+.w-profile{
+    transform: translateY(0px);
+
+}
+.w-profile:hover{
+    transform: translatey(8px);
+
+}
+
+.w-profile{
+    padding: 15px;
+    transition: .6s;
+} 
+
+.w-profile:hover{
+    height: 310px;
+}
+.w-img{
+ 
+    
+    border: 2px solid orange;
+    
+}
+.w-profile:hover {
+    transition: .6s;
+    transform: translateY(2px);
+}
+
+.w-profile:hover .w-caption{
+    opacity: 1;
+    transform: translatey(8px);
+}
